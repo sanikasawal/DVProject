@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Analytics</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="shared.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Movie Analytics</h1>
+    <p>Cinematic Trends: Visualizing the Impact and Performance of Movies in Recent Times</p>
+  </header>
+
+  <!-- Stacked Bar Chart Section -->
+  <section>
+    <h1>Stacked Bar Chart:
+      Aggregated Revenue by Genre
+      
+      </h1>
+    <div id="stackedBarChart"></div>
+    <div id="stackedBarTooltip"></div>
+    <script src="stackedBarChart.js"></script>
+  </section>
+
+  <!-- Bubble Chart Section -->
+  <section>
+    <h1>Bubble Chart: Revenue Distribution of Movies Over Time
+    </h1>
+    <div id="bubbleChart"></div>
+    <button id="toggleInflationButton">Toggle Inflation Adjustment</button>
+    <div id="tooltip"></div>
+    <script src="bubbleChart.js"></script>
+  </section>
+
+  <!-- Network Graph Section -->
+  <section>
+    <h1>Network Graph:
+      Actor Collaboration Network
+      </h1>
+    <div id="networkChart"></div>
+    <div id="networktooltip"></div>
+    <script src="networkChart.js"></script>
+  </section>
+</body>
+</html>
